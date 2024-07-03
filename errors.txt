@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 39: unexpected indent
-        for parent_number, total_sub_chapters in route_definitions.items():
-        ^
+File "game/script.rpy", line 73: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+            action Jump("bedroom"")
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Tue Jun  4 23:53:58 2024
+Fri Jun 28 10:19:26 2024

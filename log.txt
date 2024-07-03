@@ -1,23 +1,22 @@
-2024-06-05 05:44:56 UTC
+2024-07-03 00:00:21 UTC
 Windows-10-10.0.22631
 Ren'Py 8.2.1.24030407
 
-Early init took 0.05s
-Loading error handling took 0.02s
-Loading script took 0.12s
+Early init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.13s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Test
 Running init code took 0.04s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\dylan\\AppData\\Roaming/RenPy/backups\\VN GAME':
+Backing up script files to 'C:\\Users\\dylan\\AppData\\Roaming/RenPy/backups\\YoutubeVNGame':
 Dump and make backups took 0.05s
-Cleaning cache took 0.00s
+Cleaning cache took 0.01s
 Making clean stores took 0.00s
-Initial gc took 0.03s
+Initial gc took 0.02s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
@@ -27,12 +26,12 @@ Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.02s
 Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.09s
+Running _start took 1.81s
+Interface start took 0.08s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -40,16 +39,9 @@ swap interval: 1 frames
 Windowed mode.
 Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Xe Graphics'
-Version: b'4.6.0 - Build 31.0.101.4953'
+Version: b'4.6.0 - Build 31.0.101.5522'
 Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Screen sizes: virtual=(1024, 768) physical=(1024, 768) drawable=(1024, 768)
 Maximum texture size: 4096x4096
-Traceback (most recent call last):
-  File "renpy/common/00console.rpy", line 719, in run
-    result = renpy.python.py_eval(code)
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "<none>", line 1, in <module>
-AttributeError: 'int' object has no attribute 'routeName'
+Screen sizes: virtual=(1024, 768) physical=(1023, 768) drawable=(1023, 768)
+Maximum texture size: 4096x4096
