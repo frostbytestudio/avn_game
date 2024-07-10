@@ -1,20 +1,20 @@
-2024-07-03 00:00:21 UTC
+2024-07-10 22:48:53 UTC
 Windows-10-10.0.22631
 Ren'Py 8.2.1.24030407
 
-Early init took 0.06s
+Early init took 0.07s
 Loading error handling took 0.03s
-Loading script took 0.13s
-Loading save slot metadata took 0.03s
+Loading script took 0.14s
+Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
 Running init code took 0.04s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\dylan\\AppData\\Roaming/RenPy/backups\\YoutubeVNGame':
+Backing up script files to 'C:\\Users\\dylan\\AppData\\Roaming/RenPy/backups\\avn_game-main':
 Dump and make backups took 0.05s
-Cleaning cache took 0.01s
+Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.02s
 DPI scale factor: 1.000000
@@ -22,16 +22,16 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.03s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.04s
+Prepare screens took 0.05s
 Save pyanalysis. took 0.02s
-Save bytecode. took 0.03s
-Running _start took 1.81s
-Interface start took 0.08s
+Save bytecode. took 0.04s
+Running _start took 1.73s
+Interface start took 0.07s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -41,7 +41,5 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Xe Graphics'
 Version: b'4.6.0 - Build 31.0.101.5522'
 Display Info: None
-Screen sizes: virtual=(1024, 768) physical=(1024, 768) drawable=(1024, 768)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1024, 768) physical=(1023, 768) drawable=(1023, 768)
+Screen sizes: virtual=(1024, 768) physical=(1023, 767) drawable=(1023, 767)
 Maximum texture size: 4096x4096

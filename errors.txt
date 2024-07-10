@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 73: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-            action Jump("bedroom"")
+The label home_hallway is defined twice, at File "game/location_sets.rpy", line 6:
+label home_hallway:
+and File "game/script.rpy", line 49:
+label home_hallway:
+
+
+The label home_entrance is defined twice, at File "game/location_sets.rpy", line 11:
+label home_entrance:
+and File "game/script.rpy", line 54:
+label home_entrance:
+
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Fri Jun 28 10:19:26 2024
+Wed Jul 10 17:44:35 2024
