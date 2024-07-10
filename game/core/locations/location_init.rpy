@@ -1,6 +1,6 @@
 init -2 python:
 
-    L_home_bedroom = Location("Bedroom", background_key="home_bedroom", parents=[None], ref="bedroom_screen")
+    L_home_bedroom = Location("Bedroom", background_key="home_bedroom", parents=[None], label="player_bedroom", ref="bedroom_screen")
     L_home_hallway = Location("Hallway", background_key="home_hallway", parents=[None], ref="hallway_screen")
     L_home_entrance = Location("Entrance", background_key="home_entrance", parents=[None], ref="entrance_screen")
 

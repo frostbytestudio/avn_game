@@ -1,28 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/location_sets.rpy", line 9, in script
-    $ game.main()
-ScriptError: could not find label 'player_bedroom'.
+  File "game/script.rpy", line 58, in script
+    $ player.location.call()
+  File "game/script.rpy", line 58, in <module>
+    $ player.location.call()
+  File "game/core/locations/location.rpy", line 27, in call
+    renpy.log(f"Calling Location with label: {self.label}")
+AttributeError: 'Location' object has no attribute 'label'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\main.py", line 635, in main
-    run(restart)
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\main.py", line 145, in run
-    renpy.execution.run_context(True)
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\execution.py", line 955, in run_context
-    context.run()
-  File "game/location_sets.rpy", line 9, in script
-    $ game.main()
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'player_bedroom'.
+  File "game/script.rpy", line 58, in script
+    $ player.location.call()
+  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 58, in <module>
+    $ player.location.call()
+  File "game/core/locations/location.rpy", line 27, in call
+    renpy.log(f"Calling Location with label: {self.label}")
+AttributeError: 'Location' object has no attribute 'label'
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 YoutubeVNGame 1.0
-Wed Jul 10 17:48:34 2024
+Wed Jul 10 18:18:02 2024

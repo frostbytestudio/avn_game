@@ -37,6 +37,22 @@ label splashscreen:
 label start:
 
     $ game = Game("YouTube VN")
-    $ time_of_day = "day"
+    $ persistent.time_of_day = "day"
     $ player = Player(player_name)
-    jump bedroom
+    jump player_bedroom
+
+label game_main:
+
+    $ tod = game.timer.tod
+
+    if tod == 0:
+        $ persistent.time_of_day = "day"
+    elif tod == 1:
+        $ persistent.time_of_day = "afternoon"
+    elif tod == 2:
+        $ persistent.time_of_day = "evening"
+    elif tod == 3:
+        $ persistent.time_of_day = "night"
+
+    $ player.location.hide_screen()
+    $ player.location.call()

@@ -15,7 +15,7 @@ screen hallway_screen:
         pos (175, 280)
         idle "objects/object_door_02.png"
         hover "objects/object_door_02_hover.png"
-        action Jump("bedroom")
+        action Jump("player_bedroom")
 
     imagebutton:
         focus_mask True
