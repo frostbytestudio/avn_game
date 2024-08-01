@@ -19,3 +19,6 @@ init -6 python:
             renpy.block_rollback()
 
             self._tod = tod
+
+        def reset(self, tod=None):
+            self._tod = 0

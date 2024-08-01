@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-The label home_hallway is defined twice, at File "game/location_sets.rpy", line 6:
-label home_hallway:
-and File "game/script.rpy", line 49:
-label home_hallway:
-
-
-The label home_entrance is defined twice, at File "game/location_sets.rpy", line 11:
-label home_entrance:
-and File "game/script.rpy", line 54:
-label home_entrance:
-
+File "game/script.rpy", line 60: end of line expected.
+    jump game_main with dissolve
+                   ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed Jul 10 17:44:35 2024
+Thu Aug  1 13:18:14 2024

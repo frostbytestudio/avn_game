@@ -1,5 +1,6 @@
 init python:
 
+
     class HoverImage(renpy.Displayable):
         def __init__(self, img, **kwargs):
             super(HoverImage, self).__init__(**kwargs)

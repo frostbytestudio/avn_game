@@ -10,8 +10,9 @@ init -6 python:
             renpy.scene(layer='screens')
             renpy.free_memory()
             renpy.display.render.free_memory()
-            
+
             _window_hide()
+        
 
             renpy.show_screen("game_gui")
 
@@ -32,8 +33,19 @@ screen game_gui:
     vbox:
         text "Current Time of Day: [persistent.time_of_day]"
         text "TOD: [tod]"
+        text "Game Day: [gameDay]"
 
-    imagebutton:
-        idle "images/gui/ui_piece_skip.png"
-        pos 507, 46
-        action TickTimer()
+    if(player.location == L_home_bedroom):
+        if (tod <= 2):
+            imagebutton:
+                idle "images/gui/ui_piece_skip.png"
+                pos 507, 46
+                action TickTimer()
+
+        if tod == 3:
+            textbutton "Reset TOD":
+                pos 0, 80
+                action ResetTOD()
+    else:
+        # Don't show button anywhere else
+        pass

@@ -1555,7 +1555,7 @@ style main_menu_frame:
     background "gui/phone/overlay/main_menu.png"
 
 style game_menu_outer_frame:
-    variant "small"
+    variant "medium"
     background "gui/phone/overlay/game_menu.png"
 
 style game_menu_navigation_frame:

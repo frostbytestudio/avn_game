@@ -40,5 +40,5 @@ init -2 python:
         }
     }
 
-    def get_background(location, time_of_day):
+    def get_background(location, time_of_day, blur=False):
         return backgrounds[location.background_key].get(time_of_day, backgrounds[location.background_key].get("default"))
