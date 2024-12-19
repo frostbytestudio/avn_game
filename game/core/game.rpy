@@ -33,7 +33,7 @@ screen game_gui:
     vbox:
         text "Current Time of Day: [persistent.time_of_day]"
         text "TOD: [tod]"
-        text "Game Day: [gameDay]"
+        text "Game Day: [persistent.gameDay]"
 
     if(player.location == L_home_bedroom):
         if (tod <= 2):
@@ -49,3 +49,22 @@ screen game_gui:
     else:
         # Don't show button anywhere else
         pass
+
+
+label game_main:
+
+    $ tod = game.timer.tod
+
+    if tod == 0:
+        $ persistent.time_of_day = "day"
+    elif tod == 1:
+        $ persistent.time_of_day = "afternoon"
+    elif tod == 2:
+        $ persistent.time_of_day = "evening"
+    elif tod == 3:
+        $ persistent.time_of_day = "night"
+
+    $ event_manager.check_events()
+
+    $ player.location.hide_screen()
+    $ player.location.call()

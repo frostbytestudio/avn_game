@@ -1,37 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/gui.rpy", line 133, in script
-    define gui.dialogue_xpos = (config.screen_width - gui.dialogue_width) / 2
-  File "game/gui.rpy", line 133, in script
-    define gui.dialogue_xpos = (config.screen_width - gui.dialogue_width) / 2
-  File "game/gui.rpy", line 133, in <module>
-    define gui.dialogue_xpos = (config.screen_width - gui.dialogue_width) / 2
-AttributeError: 'StoreModule' object has no attribute 'dialogue_width'
+  File "game/core/game.rpy", line 70, in script call
+    $ player.location.call()
+  File "game/core/game.rpy", line 70, in script call
+    $ player.location.call()
+  File "game/core/game.rpy", line 70, in script call
+    $ player.location.call()
+  File "game/script.rpy", line 50, in script
+    $ gameDay += 1
+  File "game/script.rpy", line 50, in <module>
+    $ gameDay += 1
+NameError: name 'gameDay' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\main.py", line 526, in main
-    renpy.game.context().run(node)
-  File "game/gui.rpy", line 133, in script
-    define gui.dialogue_xpos = (config.screen_width - gui.dialogue_width) / 2
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "game/gui.rpy", line 133, in script
-    define gui.dialogue_xpos = (config.screen_width - gui.dialogue_width) / 2
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\ast.py", line 2219, in execute
-    self.set()
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\ast.py", line 2233, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/gui.rpy", line 133, in <module>
-    define gui.dialogue_xpos = (config.screen_width - gui.dialogue_width) / 2
-AttributeError: 'StoreModule' object has no attribute 'dialogue_width'
+  File "game/core/game.rpy", line 70, in script call
+    $ player.location.call()
+  File "game/core/game.rpy", line 70, in script call
+    $ player.location.call()
+  File "game/core/game.rpy", line 70, in script call
+    $ player.location.call()
+  File "game/script.rpy", line 50, in script
+    $ gameDay += 1
+  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 50, in <module>
+    $ gameDay += 1
+NameError: name 'gameDay' is not defined
 
 Windows-10-10.0.22631 AMD64
-Ren'Py 8.2.1.24030407
+Ren'Py 8.2.3.24061702
 YoutubeVNGame 1.0
-Thu Aug  1 12:59:19 2024
+Wed Dec 18 22:58:21 2024

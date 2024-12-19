@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 60: end of line expected.
-    jump game_main with dissolve
-                   ^
+File "game/core/chapters/event_manager.rpy", line 19: invalid syntax
+            return not self.completed all(condition(**kwargs) for condition in self.conditions)
+                                       ^
 
-Ren'Py Version: Ren'Py 8.2.1.24030407
-Thu Aug  1 13:18:14 2024
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Wed Dec 18 23:25:16 2024

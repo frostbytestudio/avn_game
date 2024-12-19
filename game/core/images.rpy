@@ -18,3 +18,16 @@ init python:
         elif time_of_day in ["evening", "night"]:
             time_of_day = "night"
         return "objects/{}_{}.png".format(door_id, time_of_day)
+
+
+
+# Define Character Images
+image anon norm = "images/objects/char_main.png"
+image roommate_daughter norm = "images/objects/char_sis.png"
+
+
+# Define Background Blur Images
+image player bedroom blur = "images/backgrounds/location_home_bedroom_day_blur.jpg"
+image home hallway blur = "images/backgrounds/location_home_hallway_day_blur.jpg"
+
+image splash_logo = "splash.jpg"
