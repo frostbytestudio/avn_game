@@ -1,0 +1,11 @@
+# Ignore log.txt in the root directory
+log.txt
+
+# Ignore the cache folder inside the game folder
+game/cache/
+
+# Ignore the saves folder inside the game folder
+game/saves/
+
+# Ignore all files with the .rpyc extension
+*.rpyc
