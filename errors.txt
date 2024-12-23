@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/core/chapters/event_manager.rpy", line 19: invalid syntax
-            return not self.completed all(condition(**kwargs) for condition in self.conditions)
-                                       ^
+File "game/navi_ui.rpy", line 17: 'xfill' is not a keyword argument or valid child of the screen statement.
+    xfill True
+         ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Wed Dec 18 23:25:16 2024
+Mon Dec 23 15:26:59 2024

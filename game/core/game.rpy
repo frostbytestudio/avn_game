@@ -14,7 +14,8 @@ init -6 python:
             _window_hide()
         
 
-            renpy.show_screen("game_gui")
+            #renpy.show_screen("game_gui")
+            renpy.show_screen("navi")
 
             if location is None:
                 player.location.call_screen(*call_screen_args)
