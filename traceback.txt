@@ -1,38 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/core/game.rpy", line 70, in script call
-    $ player.location.call()
-  File "game/core/game.rpy", line 70, in script call
-    $ player.location.call()
-  File "game/core/game.rpy", line 70, in script call
-    $ player.location.call()
-  File "game/script.rpy", line 50, in script
-    $ gameDay += 1
-  File "game/script.rpy", line 50, in <module>
-    $ gameDay += 1
-NameError: name 'gameDay' is not defined
+  File "game/core/locations/location_init.rpy", line 1, in script
+    init -2 python:
+  File "game/core/locations/location_init.rpy", line 3, in <module>
+    L_home_bedroom = Location("Bedroom", background_key="home_bedroom", parents=[None], label="player_bedroom", ref="bedroom_screen")
+NameError: name 'Location' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/core/game.rpy", line 70, in script call
-    $ player.location.call()
-  File "game/core/game.rpy", line 70, in script call
-    $ player.location.call()
-  File "game/core/game.rpy", line 70, in script call
-    $ player.location.call()
-  File "game/script.rpy", line 50, in script
-    $ gameDay += 1
+  File "game/core/locations/location_init.rpy", line 1, in script
+    init -2 python:
   File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\ast.py", line 823, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Program Files\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 50, in <module>
-    $ gameDay += 1
-NameError: name 'gameDay' is not defined
+  File "game/core/locations/location_init.rpy", line 3, in <module>
+    L_home_bedroom = Location("Bedroom", background_key="home_bedroom", parents=[None], label="player_bedroom", ref="bedroom_screen")
+NameError: name 'Location' is not defined
 
-Windows-10-10.0.22631 AMD64
+Windows-10-10.0.26100 AMD64
 Ren'Py 8.2.3.24061702
 YoutubeVNGame 1.0
-Wed Dec 18 22:58:21 2024
+Mon Dec 23 15:58:52 2024
