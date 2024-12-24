@@ -18,6 +18,8 @@ screen time_display():
         text "Monday" style "time_display_text"
 
 
+# INIT THE STYLES AND TRANSFORMS #
+
 # Define a transform for the darkened hover state
 transform hover_darken(dark_amount=-0.2):
     on idle:
@@ -30,12 +32,13 @@ transform hover_darken(dark_amount=-0.2):
         matrixcolor BrightnessMatrix(dark_amount)
         zoom 0.04
 
+# Style for Nav Menu
 style navigation_menu:
-    spacing 18
-    xalign 0.0
-    yalign 0.0
-    xpadding 20
-    ypadding 20
+    spacing 18          # Controls the gap between icons
+    xalign 0.0          # X pos the entire menu
+    yalign 0.0          # Y pos the entire menu
+    xpadding 20         # X margin from the screen edge
+    ypadding 20         # Y margin from the screen edge
 
 style time_display_text:
     text_align 0.5
@@ -54,8 +57,8 @@ screen navi:
     # Main Top Bar Container
     hbox:
 
-        xfill True 
-        ypos 0
+        xfill True  # Stretch across the screen width
+        ypos 0      # Position at top
 
         # Left Section - Settings, Profile, Events
         hbox:
@@ -90,8 +93,8 @@ screen navi:
         # Right Section - Inventory, Phone, Map
         hbox:
 
-            xalign 1.0
-            xsize 300
+            xalign 1.0  # Right-align this section
+            xsize 300   # Match left section width
 
             imagebutton:
                 idle "navi_menu_inventory"
