@@ -1,6 +1,12 @@
 # Ignore log.txt in the root directory
 log.txt
 
+# Ignore traceback.tx
+traceback.txt
+
+# Ignore Errors Text
+errors.txt
+
 # Ignore the cache folder inside the game folder
 game/cache/
 

@@ -40,6 +40,13 @@ style navigation_menu:
     xpadding 20         # X margin from the screen edge
     ypadding 20         # Y margin from the screen edge
 
+style navigation_menu_bottom:
+    spacing 18
+    xalign 1.0
+    yalign 1.0
+    xpadding 20
+    ypadding 20
+
 style time_display_text:
     text_align 0.5
     bold True

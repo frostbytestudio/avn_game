@@ -14,7 +14,7 @@ init -6 python:
             _window_hide()
         
 
-            #renpy.show_screen("game_gui")
+            renpy.show_screen("game_gui")
             renpy.show_screen("navi")
 
             if location is None:
@@ -24,32 +24,42 @@ init -6 python:
 
 screen game_gui:
 
-    default tod = game.timer.tod
-    default time_pieces_positions = [554, 499, 444]
-
-    add "images/gui/ui_piece_time.png" xpos 441 ypos 2
-    for i in xrange(3 - game.timer._tod):
-        add "images/gui/ui_day_cycle_bar.png" pos time_pieces_positions[i], 29
+    default day_timer = game.timer
 
     vbox:
         text "Current Time of Day: [persistent.time_of_day]"
-        text "TOD: [tod]"
+        #text "TOD: [tod]"
         text "Game Day: [persistent.gameDay]"
 
     if(player.location == L_home_bedroom):
-        if (tod <= 2):
-            imagebutton:
-                idle "images/gui/ui_piece_skip.png"
-                pos 507, 46
-                action TickTimer()
 
-        if tod == 3:
-            textbutton "Reset TOD":
-                pos 0, 80
+        hbox:
+
+            style "navigation_menu_bottom"
+
+            if (day_timer._tod <=2):
+                imagebutton:
+                    idle "navi_menu_time"
+                    hover "navi_menu_time"
+                    at hover_darken(-0.2)
+                    focus_mask True
+                    action TickTimer()
+            else:
+                # Don't show Advance Time after "Evening"
+                pass
+
+
+            imagebutton:
+                idle "navi_menu_sleep"
+                hover "navi_menu_sleep"
+                at hover_darken(-0.2)
+                focus_mask True
                 action ResetTOD()
+
     else:
-        # Don't show button anywhere else
+        # Don't show Advance Time and Sleep Button Outside of Player Room
         pass
+
 
 
 label game_main:
