@@ -64,17 +64,6 @@ screen game_gui:
 
 label game_main:
 
-    $ tod = game.timer.tod
-
-    if tod == 0:
-        $ persistent.time_of_day = "day"
-    elif tod == 1:
-        $ persistent.time_of_day = "afternoon"
-    elif tod == 2:
-        $ persistent.time_of_day = "evening"
-    elif tod == 3:
-        $ persistent.time_of_day = "night"
-
     $ event_manager.check_events()
 
     $ player.location.hide_screen()

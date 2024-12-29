@@ -38,8 +38,7 @@ label splashscreen:
 
 label start:
     $ game = Game("YouTube VN")
-    $ persistent.gameDay = 1
-    $ persistent.time_of_day = "day"
+    $ day_timer = game.timer
     $ player = Player(player_name)
     $ event_manager.check_events()
     jump player_bedroom
@@ -47,5 +46,4 @@ label start:
 
 label next_day:
 
-    $ persistent.gameDay += 1
     jump game_main

@@ -14,8 +14,8 @@ screen time_display():
 
         yalign 0.5
         
-        text "8:00 AM" style "time_display_text"
-        text "Monday" style "time_display_text"
+        text "[day_timer.current_tod_display]" style "time_display_text"
+        text "[day_timer.current_weekday]" style "time_display_text"
 
 
 # INIT THE STYLES AND TRANSFORMS #
