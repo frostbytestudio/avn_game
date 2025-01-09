@@ -1,15 +1,5 @@
 ﻿init python:
 
-    def reset_data():
-        for attr in dir(persistent):
-            if not callable(attr) and not attr.startswith("_"):
-                setattr(persistent, attr, None)
-
-        for slot in renpy.list_saved_games(fast=True):
-            renpy.unlink_save(slot)
-
-        renpy.quit(relaunch=True)
-
 
 # Presplash Loading Time
 define config.minimum_presplash_time = 3.0

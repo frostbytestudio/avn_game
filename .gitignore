@@ -16,3 +16,4 @@ game/saves/
 # Ignore all files with the .rpyc extension
 *.rpyc
 traceback.txt
+delete_rpyc.py
