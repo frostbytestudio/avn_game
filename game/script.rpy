@@ -1,17 +1,16 @@
-﻿init python:
-
+﻿init -1 python:
+    
+    ShowSplashScreen(False)
 
 # Presplash Loading Time
 define config.minimum_presplash_time = 3.0
 
 default player_name = ""
 
-define anon = Character("Player", color="#c8ffc8")
-define liz = Character("Liz", color="#e9216dff")
-
-
-
 label splashscreen:
+    if not persistent.show_splashscreen:
+        return
+
     show splash_logo
     with dissolve
     pause 1
@@ -30,7 +29,7 @@ label start:
     $ game = Game("YouTube VN")
     $ day_timer = game.timer
     $ player = Player(player_name)
-    $ event_manager.check_events()
+    $ ShowSplashScreen(False)
     jump player_bedroom
 
 

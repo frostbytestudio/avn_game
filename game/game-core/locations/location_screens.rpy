@@ -3,20 +3,16 @@ screen bedroom_screen:
 
     imagebutton:
         focus_mask True
-        pos (225, 187)
-        idle get_door("object_door_01", persistent.time_of_day)
-        hover HoverImage(get_door("object_door_01", persistent.time_of_day))
+        pos (375, 180)
+        idle get_door("object_door_01", day_timer.current_tod)
+        hover HoverImage(get_door("object_door_01", day_timer.current_tod))
         action Jump("home_hallway")
 
 screen hallway_screen:
 
     imagebutton:
         focus_mask True
-        pos (175, 280)
-        idle get_door("object_door_02", persistent.time_of_day)
-        hover HoverImage(get_door("object_door_02", persistent.time_of_day))
+        pos (279, 262)
+        idle get_door("object_door_02", day_timer.current_tod)
+        hover HoverImage(get_door("object_door_02", day_timer.current_tod))
         action Jump("player_bedroom")
-
-screen entrance_screen:
-
-    text "Home Entrance Screen"

@@ -1,4 +1,4 @@
-init python:
+init -10 python:
 
     class TickTimer(Action):
 
@@ -23,3 +23,9 @@ init python:
             renpy.unlink_save(slot)
 
         renpy.quit(relaunch=True)
+
+    def ShowSplashScreen(show):
+        if not isinstance(show, bool):
+            raise ValueError("ShowSplashScreen only accepts a boolean value (True or False).")
+
+        persistent.show_splashscreen = show

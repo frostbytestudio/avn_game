@@ -1,28 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 42, in script
-    $ day_timer.current_tod = "day"
-  File "game/script.rpy", line 42, in <module>
-    $ day_timer.current_tod = "day"
-AttributeError: can't set attribute
+  File "game/game-core/game.rpy", line 62, in script
+    $ event_manager.check_events()
+  File "game/game-core/game.rpy", line 62, in <module>
+    $ event_manager.check_events()
+NameError: name 'event_manager' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 42, in script
-    $ day_timer.current_tod = "day"
+  File "game/game-core/game.rpy", line 62, in script
+    $ event_manager.check_events()
   File "C:\Users\dylan\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Users\dylan\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 42, in <module>
-    $ day_timer.current_tod = "day"
-  File "C:\Users\dylan\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\revertable.py", line 90, in do_mutation
-    return method(self, *args, **kwargs)
-AttributeError: can't set attribute
+  File "game/game-core/game.rpy", line 62, in <module>
+    $ event_manager.check_events()
+NameError: name 'event_manager' is not defined
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.4.24120703
 YoutubeVNGame 1.0
-Sun Dec 29 00:38:34 2024
+Sat Jan 11 00:40:38 2025

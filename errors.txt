@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/navi_ui.rpy", line 17: 'xfill' is not a keyword argument or valid child of the screen statement.
-    xfill True
+File "game/game-core/game.rpy", line 29: vbox expects a non-empty block.
+    vbox:
          ^
 
-Ren'Py Version: Ren'Py 8.2.3.24061702
-Mon Dec 23 15:26:59 2024
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Sat Jan 11 00:34:34 2025

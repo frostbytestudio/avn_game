@@ -26,11 +26,6 @@ screen game_gui:
 
     default day_timer = game.timer
 
-    vbox:
-        text "Current Time of Day: [persistent.time_of_day]"
-        #text "TOD: [tod]"
-        text "Game Day: [persistent.gameDay]"
-
     if(player.location == L_home_bedroom):
 
         hbox:
@@ -63,8 +58,6 @@ screen game_gui:
 
 
 label game_main:
-
-    $ event_manager.check_events()
 
     $ player.location.hide_screen()
     $ player.location.call()

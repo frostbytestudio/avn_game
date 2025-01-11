@@ -15,7 +15,9 @@ init python:
     def get_door(door_id, time_of_day):
         if time_of_day in ["day", "afternoon"]:
             time_of_day = "default"
-        elif time_of_day in ["evening", "night"]:
+        elif time_of_day in ["evening"]:
+            time_of_day = "evening"
+        elif time_of_day in ["night"]:
             time_of_day = "night"
         return "objects/{}_{}.png".format(door_id, time_of_day)
 
